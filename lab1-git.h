@@ -4,6 +4,8 @@
 #pragma once
 
 #include <iostream>
+
 int hoursOf(int sec);
+int minutesOf(int sec);
 
 // TODO: установите здесь ссылки на дополнительные заголовки, требующиеся для программы.

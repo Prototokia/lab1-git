@@ -9,6 +9,13 @@ int hoursOf(int sec) {
 	return sec / 3600;
 }
 
+// Перевод секунд в минуты
+int minutesOf(int sec) {
+	return (sec % 3600) / 60;
+}
+
+// ===== Главная функция: меню =====
+
 int main()
 {
 	setlocale(LC_ALL, "Russian");
@@ -20,6 +27,7 @@ int main()
 		std::cout << "\n=== Вариант 71: Перевод секунд в часы;минуты;секунды ===\n";
 
 		std::cout << "1. Секунды => часы\n";
+		std::cout << "2. Секунды => минуты\n";
 		std::cout << "0. Выход\n";
 		std::cout << "Выберите пункт: ";
 
@@ -29,6 +37,12 @@ int main()
 			std::cout << "Введите количество секунд: ";
 			std::cin >> sec;
 			std::cout << "В " << sec << " секундах " << hoursOf(sec) << " часов.\n";
+			break;
+		}
+		case 2: {
+			std::cout << "Введите количество секунд: ";
+			std::cin >> sec;
+			std::cout << "В " << sec << " секундах " << minutesOf(sec) << " минут.\n";
 			break;
 		}
 		case 0:
