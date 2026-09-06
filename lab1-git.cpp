@@ -14,6 +14,11 @@ int minutesOf(int sec) {
 	return (sec % 3600) / 60;
 }
 
+// Перевод секунд в секунды
+int secondsOf(int sec) {
+	return sec % 60;
+}
+
 // ===== Главная функция: меню =====
 
 int main()
@@ -28,6 +33,7 @@ int main()
 
 		std::cout << "1. Секунды => часы\n";
 		std::cout << "2. Секунды => минуты\n";
+		std::cout << "3. Секунды => секунды\n";
 		std::cout << "0. Выход\n";
 		std::cout << "Выберите пункт: ";
 
@@ -43,6 +49,12 @@ int main()
 			std::cout << "Введите количество секунд: ";
 			std::cin >> sec;
 			std::cout << "В " << sec << " секундах " << minutesOf(sec) << " минут.\n";
+			break;
+		}
+		case 3: {
+			std::cout << "Введите количество секунд: ";
+			std::cin >> sec;
+			std::cout << "В " << sec << " секундах " << minutesOf(sec) << " секунд.\n";
 			break;
 		}
 		case 0:

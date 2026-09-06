@@ -7,5 +7,6 @@
 
 int hoursOf(int sec);
 int minutesOf(int sec);
+int secondsOf(int sec);
 
 // TODO: установите здесь ссылки на дополнительные заголовки, требующиеся для программы.
