@@ -25,7 +25,7 @@ int secondsOf(int sec) {
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-
+	std::cout << "Изменение в файле на компьютере 1";
 	int choice;
 	int sec;
 
